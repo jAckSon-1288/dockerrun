@@ -10,6 +10,6 @@ node {
     stage('Build Image') {
   
        app = docker.build("ashokainapur/rep")
-       sh 'docker run -d --name nginx_cont -p 8083:80 ashokainapur/rep'
+       sh 'docker run -d --name nginx_cont -p 8089:80 ashokainapur/rep'
     }
 }
