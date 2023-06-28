@@ -1,3 +1,4 @@
+
 node {
     def app
 
@@ -9,7 +10,20 @@ node {
 
     stage('Build Image') {
   
-       app = docker.build(""npatkar/repo)
-       sh 'docker run -d --name nginx_con1 -p 8089:80 npatkar/repo ' 
+       app = docker.build("ashokainapur/rep")
+       sh 'docker run -d --name nginx_image -p 8089:80 ashokainapur/rep'
     }
 }
+
+
+      
+
+
+
+
+
+  
+
+
+
+
