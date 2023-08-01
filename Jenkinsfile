@@ -10,8 +10,8 @@ node {
 
     stage('Build Image') {
   
-       app = docker.build("akshaya23/assign2")
-       sh 'docker run -d --name nginx_image -p 8089:80 akshaya23/assign2'
+       app = docker.build("jackson123488/demo-jenkins")
+       sh 'docker run -d --name nginx_image -p 8089:80 jackson123488/demo-jenkins'
     }
 }
 
